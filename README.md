@@ -14,31 +14,6 @@ A modern and responsive React application for Login and Sign-Up functionality. B
 
 ---
 
-## 🏗 Project Structure
-
-auth-pages/
-├─ src/
-│ ├─ components/
-│ │ ├─ forms/
-│ │ │ └─ ConfigurableForm.jsx
-│ │ └─ layout/
-│ │ └─ AuthLayout.jsx
-│ ├─ pages/
-│ │ ├─ auth/
-│ │ │ ├─ login/
-│ │ │ │ └─ LoginPage.jsx
-│ │ │ └─ register/
-│ │ │ └─ RegisterPage.jsx
-│ ├─ App.jsx
-│ └─ main.jsx
-├─ package.json
-├─ tailwind.config.js
-└─ vite.config.js
-
-yaml
-Copy code
-
----
 
 ## ⚡ Features
 
