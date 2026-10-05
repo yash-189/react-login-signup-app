@@ -1,80 +1,51 @@
-# React Login & Sign-Up App
+# React Login and Sign Up
 
-A modern and responsive React application for Login and Sign-Up functionality. Built using **React**, **Vite**, **React Hook Form**, **Tailwind CSS**, and **ShadCN** components. The app demonstrates reusable forms, input validation, and client-side routing.
+Login and sign up pages built with React, React Hook Form, Tailwind CSS and shadcn/ui. The forms share one reusable component and validate every field as you type.
 
----
+**[Live demo](https://react-login-signup-app-pi.vercel.app)**
 
-## 🔗 Live Demo
+![Login and sign up mockup](docs/mockup.jpg)
 
-[https://react-login-signup-app-pi.vercel.app/](https://react-login-signup-app-pi.vercel.app/)
+## Features
 
-## 📂 Repository
+- One reusable form component, configured with a list of fields
+- Validation with clear messages under each field:
+  - Full name: letters and spaces only
+  - Username: a mix of letters, numbers and special characters
+  - Email: valid email format
+  - Phone: Indian number with the +91 country code
+  - Password: uppercase, lowercase, number and special character, and different from the username
+  - Confirm password: must match the password
+- Show and hide password toggle
+- Remember me option on login
+- Routing between login (`/`) and sign up (`/register`)
+- Responsive layout for mobile and desktop
 
-[https://github.com/yash-189/react-login-signup-app](https://github.com/yash-189/react-login-signup-app)
+## Screenshots
 
----
+| Login | Sign up |
+|---|---|
+| ![Login](docs/login.jpg) | ![Sign up](docs/signup.jpg) |
 
+| Validation | Mobile |
+|---|---|
+| ![Validation](docs/validation.jpg) | <img src="docs/mobile.jpg" width="260" alt="Mobile" /> |
 
-## ⚡ Features
+## Tech stack
 
-- **Reusable Form Component** with configurable fields
-- **Input Validation**:
-  - Name: Alphabets only
-  - Username: Alphanumeric + special characters
-  - Password: Must include uppercase, lowercase, number, special character, and cannot match username
-  - Confirm Password: Must match password
-  - Email: Valid email format
-  - Phone: Country code + number only
-- **Password Visibility Toggle**
-- **Responsive Design**
-- **Client-Side Routing** between Login & Sign-Up
-- **Modern UI** using ShadCN components and Tailwind CSS
+React 18 · Vite · React Hook Form · Tailwind CSS · shadcn/ui · Lucide icons · React Router
 
----
-
-## 🛠 Technologies Used
-
-- React 18
-- Vite
-- Tailwind CSS
-- ShadCN UI Components
-- React Hook Form
-- Lucide Icons
-- React Router DOM
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
+## Run locally
 
 ```bash
 git clone https://github.com/yash-189/react-login-signup-app.git
 cd react-login-signup-app
-2. Install dependencies
-bash
-Copy code
 npm install
-3. Run the development server
-bash
-Copy code
 npm run dev
-Open http://localhost:5173 to view the app.
+```
 
-🔒 Form Validation
-The forms in this project are powered by React Hook Form. Validation rules include:
+Then open http://localhost:5173.
 
-Minimum and maximum character lengths
+## Notes
 
-Regular expression checks for format
-
-Custom validation for passwords and confirm passwords
-
-Error messages appear below input fields if validation fails.
-
-📌 Notes
-The project currently demonstrates frontend functionality only.
-
-Navigation after login or sign-up is handled client-side.
-
-Backend integration can be added for full authentication flow.
+This project covers the frontend only. Login and sign up don't call a backend yet, so an auth API can be connected to the form submit handlers.
